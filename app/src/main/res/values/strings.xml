@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">RecBunks</string>
+    <string name="app_settings">Setttings</string>
+    <string name="titleSubject">Subjects</string>
+    <string name="titleNoSubjects">No Subjects Yet...</string>
+    <string name="new_subject">New Subject</string>
+    <string name="new_subject_name">Subject Name</string>
+    <string name="new_subject_maxBunks">Max Bunks</string>
+    <string name="new_subject_currentBunks">Current Bunks</string>
+    <string name="button_add">Add</string>
+    <string name="button_finish">Finish</string>
+    <string name="add_newRecord">Add New</string>
+    <string name="button_discard">Discard</string>
+    <string name="errorSubjectName">Please Enter Subject Name</string>
+    <string name="errorMaxBunks">Please Enter Max Bunks</string>
+    <string name="errorCurrBunks">Please Enter Current Bunks</string>
+    <string name="failNotify">STOP BUNKING</string>
+    <string name="editSubject">Edit</string>
+    <string name="buttonSave">Save</string>
+    <string name="share">Share</string>
+    <string name="deleteAll">Delete All</string>
+</resources>

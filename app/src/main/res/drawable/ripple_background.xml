@@ -1,0 +1,10 @@
+<ripple
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/buttonRipple">
+    <item>
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@color/listBackground" />
+        </shape>
+    </item>
+</ripple>

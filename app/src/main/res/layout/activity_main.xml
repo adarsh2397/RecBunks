@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.adarshhonawad.recbunks.MainActivity">
+
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <ListView
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleText"
+        android:id="@+id/recordsListView"
+        android:layout_margin="15dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        android:background="@android:color/transparent"
+        android:drawSelectorOnTop="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/titleText"
+        android:layout_below="@+id/tool_bar"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/titleColor"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

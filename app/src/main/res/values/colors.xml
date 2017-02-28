@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="appBackground">#e2e2e2</color>
+    <color name="colorPrimary">#0099ff</color>
+    <color name="colorPrimaryDark">#018be7</color>
+    <color name="titleColor">#1370ea</color>
+    <color name="colorAccent">#ffac40</color>
+    <color name="buttonRipple">#c2c2c2</color>
+    <color name="listBackground">#f2f2f2</color>
+    <color name="HighBunks">#de0f0b</color>
+    <color name="MediumBunks">#ffbb00</color>
+    <color name="LowBunks">#24b617</color>
+    <color name="maxRipple">#939393</color>
+    <color name="maxBackground">#acacac</color>
+    <color name="multipleSubjectsBackground">#4b48ff</color>
+    <color name="multipleSubjectsBackgroundRipple">#2960a9</color>
+</resources>

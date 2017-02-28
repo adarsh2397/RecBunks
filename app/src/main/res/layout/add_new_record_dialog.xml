@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/new_subject"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#1370ea"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/errorText"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ed1717" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialogSubjectNameInput"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="@string/new_subject_name"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/new_subject"
+        android:textAlignment="center"
+        android:background="#dadada"
+        android:layout_marginBottom="4dp"
+        android:padding="2dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:contentDescription="@string/new_subject_maxBunks"
+        android:id="@+id/dialogMaxBunksInput"
+        android:hint="@string/new_subject_maxBunks"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:background="#dadada"
+        android:layout_marginBottom="4dp"
+        android:padding="2dp"
+        android:maxLength="2" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:contentDescription="@string/new_subject_currentBunks"
+        android:ems="10"
+        android:hint="@string/new_subject_currentBunks"
+        android:id="@+id/dialogCurrBunksInput"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:background="#dadada"
+        android:padding="2dp"
+        android:maxLength="2" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Add Multiple Subjects"
+        android:background="@drawable/ripple_add_multiple_subjects"
+        android:id="@+id/addMultipleButton"
+        android:layout_marginTop="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/fakeButtonView"
+            android:layout_centerHorizontal="true"
+            ></View>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_add"
+            android:background="@drawable/ripple_effect"
+            android:id="@+id/addButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/fakeButtonView" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_effect"
+            android:text="@string/button_discard"
+            android:id="@+id/discardButton"
+            android:layout_alignBottom="@+id/addButton"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/fakeButtonView" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/editSubject"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#1370ea"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/errorTextEdit"
+        android:textColor="#ed1717"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editSubjectName"
+            android:padding="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#ffb24c"
+            android:hint="Subject Name"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Current Bunks :"
+            android:id="@+id/currBunksText"
+            android:layout_below="@+id/editSubjectName"
+            android:layout_alignStart="@+id/editSubjectName"
+            android:padding="5dp" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:layout_marginRight="30dp"
+            android:id="@+id/editCurrBunks"
+            android:layout_alignBaseline="@+id/currBunksText"
+            android:layout_above="@+id/editMaxBunks"
+            android:layout_alignEnd="@+id/editSubjectName"
+            android:textAlignment="center"
+            android:maxLength="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Limit for Bunks :"
+            android:id="@+id/maxBunksText"
+            android:layout_below="@+id/currBunksText"
+            android:layout_alignStart="@+id/currBunksText"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editMaxBunks"
+            android:layout_below="@+id/currBunksText"
+            android:layout_alignBaseline="@+id/maxBunksText"
+            android:layout_alignStart="@+id/editCurrBunks"
+            android:textAlignment="center"
+            android:maxLength="2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonSave"
+            android:background="@drawable/ripple_effect"
+            android:id="@+id/saveButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/fakeView2"
+            android:layout_alignParentStart="true" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/fakeView2"
+            android:layout_centerHorizontal="true"
+            ></View>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_discard"
+            android:id="@+id/discardButton"
+            android:background="@drawable/ripple_effect"
+            android:layout_alignBottom="@+id/saveButton"
+            android:layout_alignLeft="@+id/fakeView2"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+
+</LinearLayout>
